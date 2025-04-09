@@ -1,6 +1,6 @@
-const inlineContent = require('./lib/inlineContent');
+import inlineContent from './lib/inlineContent.js';
 
-module.exports = (html, options) => new Promise((resolve, reject) => {
+export default (html, options) => new Promise((resolve, reject) => {
     const opt = Object.assign({}, {
         extraCss: '',
         applyStyleTags: true,
